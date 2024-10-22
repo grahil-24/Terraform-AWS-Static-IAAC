@@ -18,8 +18,9 @@ module "cloudfront" {
   domain_name = var.domain
   region = var.region
   acm_certificate_arn = module.cer.acm_certificate_arn
-  bucket_regional_domain_name = module.s3.bucket_regional_domain_name
-  bucket_www_regional_domain_name = module.s3.bucket_www_regional_domain_name
+  bucket_root_website_endpoint = module.s3.bucket_root_website_endpoint
+  bucket_www_website_endpoint = module.s3.bucket_www_website_endpoint
   zone_id = module.route53.zone_id
 }
+
 

@@ -11,13 +11,13 @@ variable "acm_certificate_arn" {
   type = string
 }
 
-variable "bucket_regional_domain_name" {
-    description = "The regional domain name of the S3 bucket for CloudFront origin."
+variable "bucket_www_website_endpoint" {
+    description = "The website endpoint of the S3 bucket for CloudFront origin."
     type        = string
 }
 
-variable "bucket_www_regional_domain_name" {
-    description = "The regional domain name of the S3 bucket for CloudFront origin."
+variable "bucket_root_website_endpoint" {
+    description = "The website endpoint of the S3 bucket for CloudFront origin."
     type        = string
 }
 
